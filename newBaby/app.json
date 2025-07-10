@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "newBaby",
+    "slug": "newBaby",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logo.png",
+    "scheme": "newbaby",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#07A69E"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/logo.png",
+        "backgroundColor": "#07A69E"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+  "plugins": [
+  "expo-router",
+  [
+    "expo-splash-screen",
+    {
+      "android": {
+        "backgroundColor": "#07A69E",
+        "image": "./assets/images/icon.png",
+        "imageResizeMode": "contain"
+      }
+    }
+  ]
+],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
