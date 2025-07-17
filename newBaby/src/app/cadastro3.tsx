@@ -1,8 +1,9 @@
+import DropDownPicker from 'react-native-dropdown-picker';
 import { View, Text, StyleSheet} from "react-native"
+import React, { useState } from 'react';
 import { ButtonNormal } from "@/components/buttonNormal/buttonNormal"
 import { router } from "expo-router"
-import {Input} from "@/components/input/index"
-import {EscolhaPerfil} from "@/components/caixaSelect/index"
+import { Picker } from '@react-native-picker/picker';
 
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 
@@ -10,11 +11,15 @@ import FontAwesome from '@expo/vector-icons/FontAwesome';
         router.navigate("/cadastro2")
     }
 
+
+
 export default function SelectCadastro(){
+
+
     return(
 
         <View style={styles.container}>
-           
+
         <View style={styles.caixinha}> 
             <FontAwesome name="chevron-left" size={35} color="#00A7A7" onPress={() => router.back()}/>
         <View style={styles.titulos}>
@@ -22,6 +27,21 @@ export default function SelectCadastro(){
             <Text style={styles.subtitle}>Selecione de quantos semanas você está</Text>
         </View>
         </View>
+
+        <View style={{ padding: 20 }}>
+      <Text>Selecione uma opção:</Text>
+
+      <Picker
+        style={{ height: 50, width: 200 }}
+      >
+        <Picker.Item label="Opção 1" value="opcao1" />
+        <Picker.Item label="Opção 2" value="opcao2" />
+        <Picker.Item label="Opção 3" value="opcao3" />
+      </Picker>
+
+    </View>
+
+
 
 
         <ButtonNormal title="Proximo" onPress={handleNext}/>
@@ -58,3 +78,34 @@ export const styles = StyleSheet.create({
         fontWeight:400,
     },
 })
+
+
+
+{/* 
+    <View style={{ padding: 20, zIndex:99}}>
+      <Text style={{ marginBottom: 10 }}>Selecione uma opção:</Text>
+
+      <DropDownPicker
+        open={open}
+        value={value}
+        items={items}
+        setOpen={setOpen}
+        setValue={setValue}
+        setItems={setItems}
+        placeholder="Selecione..."
+        style={{ borderColor: '#aaa' }}
+        dropDownContainerStyle={{ borderColor: '#aaa' }}
+      />
+    </View> */
+
+
+// const [open, setOpen] = useState(false);
+// const [value, setValue] = useState(null);
+// const [items, setItems] = useState([
+//     { label: 'Opção 1', value: 'opcao1' },
+//     { label: 'Opção 2', value: 'opcao2' },
+//     { label: 'Opção 3', value: 'opcao3' },
+//   ]);
+
+
+}
