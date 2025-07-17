@@ -14,7 +14,7 @@ export default function Index(){
 
 
     function handleNext(){
-        router.navigate("/home")
+        router.navigate("/login")
     }
 
     function handleMessage(){

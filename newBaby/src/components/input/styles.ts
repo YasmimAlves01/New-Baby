@@ -16,13 +16,14 @@ label:{
 
 input:{
     width:"100%",
-    height:52,
+    height:58,
     borderRadius: 5,
     borderWidth: 1,
     borderColor: "#C5C3C0",
     color:"#000",
     backgroundColor:"#E7F4F5",
     alignSelf:"center",
+    padding:5,
 }
 
 })

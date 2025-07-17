@@ -7,13 +7,16 @@ import {Marcado} from "@/components/checkbox/index"
 
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 
+  function handleNext(){
+        router.navigate("/cadastro")
+    }
 
 export default function Home(){
     return(
         <View style={styles.container}>
            
         <View style={styles.caixinha}> 
-            <FontAwesome name="chevron-left" size={30} color="#00A7A7" onPress={() => router.back()}/>
+            <FontAwesome name="chevron-left" size={35} color="#00A7A7" onPress={() => router.back()}/>
         <View style={styles.titulos}>
             <Text style={styles.title}>Acessar</Text>
             <Text style={styles.subtitle}>Faça login na sua conta</Text>
@@ -25,7 +28,7 @@ export default function Home(){
         <Marcado textinho="Lembre-se de mim"/>
             
             <ButtonNormal title="Entrar" />
-            <ButtonGoogle title="Cadastre-se" image={undefined} />
+            <ButtonGoogle title="Cadastre-se" image={undefined} onPress={handleNext} />
 
             <View style={styles.outras}>
                 <View style={styles.textinhos}>
