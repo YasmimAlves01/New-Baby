@@ -54,9 +54,11 @@ TitleRow:{
     alignItems:'flex-start'
 },
 title:{
-    fontSize:18,
+    fontSize:17,
     fontWeight:'600',
     color:'#079B94',
+    fontFamily: 'Lexa-Deca',
+
 }
 
 

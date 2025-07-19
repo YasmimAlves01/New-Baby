@@ -58,10 +58,14 @@ export const styles = StyleSheet.create({
     title:{
         fontSize:28,
         fontWeight:500,
+        fontFamily: 'Lexa-Deca',
+
     },
     subtitle:{
         fontSize:18,
         fontWeight:400,
+        fontFamily: 'Lexa-Deca',
+
     },
     inputs:{
         width:"100%",

@@ -28,7 +28,7 @@ export default function CadastroDois(){
         Muitas dicas de cuidados, alimentação, mudança do corpo e o que fazer quando a hora chegar"/>
         
         <EscolhaPerfil tipo="Quero acompanhar o desenvolvimento do meu filho(a)" 
-        textinho="Ideal para quem ja é papai e mamãe e deseja acompanhar o desenvolvimento, o ensino, e melhorar sua própria rotina. Muitas dicas de cuidado, alimentação, educação e comportamento"/>
+        textinho="Ideal para quem ja é papai e mamãe e deseja acompanhar o desenvolvimento, o ensino, e melhorar sua própria rotina. Muitas dicas de cuidado, alimentação, educação e comportamento" />
         </View>
             
          <Text style={styles.aviso}>** não se preocupe, você poderá alterar isso futuramente. Se você for acompanhar sua gestação ao final dela isso mudara automaticamente</Text>   
@@ -67,6 +67,7 @@ export const styles = StyleSheet.create({
     },
     subtitle:{
         fontSize:18,
+        fontFamily: 'Lexa-Deca',
         fontWeight:400,
     },
     checks:{

@@ -28,15 +28,23 @@ export default function SelectCadastro(){
         </View>
         </View>
 
-        <View style={{ padding: 20 }}>
-      <Text>Selecione uma opção:</Text>
+        <View style={styles.selectd}>
 
       <Picker
-        style={{ height: 50, width: 200 }}
+        style={styles.options}
       >
-        <Picker.Item label="Opção 1" value="opcao1" />
-        <Picker.Item label="Opção 2" value="opcao2" />
-        <Picker.Item label="Opção 3" value="opcao3" />
+      
+        <Picker.Item label="3 semanas" value="opcao1" />
+        <Picker.Item label="4 semanas" value="opcao2" />
+        <Picker.Item label="5 semanas" value="opcao3" />
+        <Picker.Item label="6 semanas" value=""        />
+        <Picker.Item label="7 semanas" value=""        />
+        <Picker.Item label="8 semanas" value=""        />
+        <Picker.Item label="9 semanas" value=""        />
+        <Picker.Item label="10 semanas" value=""        />
+        <Picker.Item label="11 semanas" value=""        />
+        <Picker.Item label="12 semanas" value=""        />
+        <Picker.Item label="13 semanas" value=""        />
       </Picker>
 
     </View>
@@ -72,11 +80,29 @@ export const styles = StyleSheet.create({
         width:"60%",
         fontSize:28,
         fontWeight:500,
+        fontFamily: 'Lexa-Deca',
+
     },
     subtitle:{
         fontSize:18,
         fontWeight:400,
+        fontFamily: 'Lexa-Deca',
+
     },
+    selectd:{
+        width:"95%",
+
+    },
+    options:{
+        height:60,
+        padding:5,
+        borderRadius:5,
+        fontSize:15,
+        fontFamily: 'Lexa-Deca',
+        backgroundColor:"#E7F4F5",
+        borderWidth:1,
+        borderColor:"#C5C3C0"
+    }
 })
 
 

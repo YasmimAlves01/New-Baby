@@ -19,6 +19,8 @@ title:{
     fontSize:20,
     fontWeight: "400",
     color: "#11838C",
+    fontFamily: 'Lexa-Deca',
+
 },
 image: {
     width: 320,

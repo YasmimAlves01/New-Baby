@@ -79,10 +79,14 @@ export const styles = StyleSheet.create({
     title:{
         fontSize:28,
         fontWeight:500,
+        fontFamily: 'Lexa-Deca',
+
     },
     subtitle:{
         fontSize:18,
         fontWeight:400,
+        fontFamily: 'Lexa-Deca',
+
     },
     outras:{
         width:"100%",
@@ -92,6 +96,8 @@ export const styles = StyleSheet.create({
         alignSelf:"center",
         textAlign:"center",
         gap:10,
+        fontFamily: 'Lexa-Deca',
+
         
     },
     textinhos:{
@@ -103,7 +109,8 @@ export const styles = StyleSheet.create({
     },
     texto:{
         color:"#C5C3C0",
-        textAlign:"center"
+        textAlign:"center",
+        fontFamily: 'Lexa-Deca',
     },
     acesso:{
         width:"100%",
