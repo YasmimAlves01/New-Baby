@@ -6,7 +6,7 @@ import { ButtonNormal } from "@/components/buttonNormal/buttonNormal";
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 
   function handleNext(){
-        router.navigate("/introducao2")
+        router.navigate("/cadastro")
     }
 
 export default function Home(){
@@ -16,20 +16,20 @@ export default function Home(){
 
        <Setinha></Setinha>
 
-        <Image source={require('../image/gravida.png')} style={styles.image}/>
+        <Image source={require('../image/gravida3.png')} style={styles.image}/>
 
 
        <View style={styles.linha}>
+        <View style={styles.bolinha}></View>
+        <View style={styles.bolinha}></View>
         <View style={styles.bolinha1}></View>
-        <View style={styles.bolinha}></View>
-        <View style={styles.bolinha}></View>
         <View style={styles.bolinha}></View>
         <View style={styles.bolinha}></View>
         <View style={styles.bolinha}></View>
        </View>
 
    <View style={styles.contentText}>
-        <Text style={styles.text}>Bem-vindo(a) ao New Baby, é um prazer te acompanhar nessa nova jornada</Text>
+        <Text style={styles.text}>Aqui você encontra tudo que você precisa para se organizar, des da gestação até o nascimento</Text>
        </View>
 
       <ButtonNormal title="Proximo" onPress={handleNext}/>
@@ -85,13 +85,13 @@ bolinha:{
 
 },
 image:{
-    width:"105%",
-    height: "68%",
+    width:"57%",
+    height: "61%",
     display:"flex",
     justifyContent:"center",
     alignSelf:"center",
-    marginTop: 90,
-    marginBottom: 30,
+    marginTop: 70,
+    marginBottom: 80,
 },
 
 })
