@@ -25,54 +25,34 @@ export default function SelectCadastro(){
         <View style={styles.caixinha}> 
             <Setinha/>
             <View style={styles.titulos}>
-            <Text style={styles.title}>De quantos semanas estou</Text>
-            <Text style={styles.subtitle}>Selecione de quantos semanas você está</Text>
+            <Text style={styles.title}>Meu filho(a) tem</Text>
+            <Text style={styles.subtitle}>Selecione de quantos meses ou anos seu filho tem </Text>
         </View>
         </View>
 
         <View style={styles.selectd}>
 
 <Picker style={styles.options}>
-  <Picker.Item label="3 semanas" value="semana3"/>
-  <Picker.Item label="4 semanas" value="semana4" />
-  <Picker.Item label="5 semanas" value="semana5" />
-  <Picker.Item label="6 semanas" value="semana6" />
-  <Picker.Item label="7 semanas" value="semana7" />
-  <Picker.Item label="8 semanas" value="semana8" />
-  <Picker.Item label="9 semanas" value="semana9" />
-  <Picker.Item label="10 semanas" value="semana10" />
-  <Picker.Item label="11 semanas" value="semana11" />
-  <Picker.Item label="12 semanas" value="semana12" />
-  <Picker.Item label="13 semanas" value="semana13" />
-  <Picker.Item label="14 semanas" value="semana14" />
-  <Picker.Item label="15 semanas" value="semana15" />
-  <Picker.Item label="16 semanas" value="semana16" />
-  <Picker.Item label="17 semanas" value="semana17" />
-  <Picker.Item label="18 semanas" value="semana18" />
-  <Picker.Item label="19 semanas" value="semana19" />
-  <Picker.Item label="20 semanas" value="semana20" />
-  <Picker.Item label="21 semanas" value="semana21" />
-  <Picker.Item label="22 semanas" value="semana22" />
-  <Picker.Item label="23 semanas" value="semana23" />
-  <Picker.Item label="24 semanas" value="semana24" />
-  <Picker.Item label="25 semanas" value="semana25" />
-  <Picker.Item label="26 semanas" value="semana26" />
-  <Picker.Item label="27 semanas" value="semana27" />
-  <Picker.Item label="28 semanas" value="semana28" />
-  <Picker.Item label="29 semanas" value="semana29" />
-  <Picker.Item label="30 semanas" value="semana30" />
-  <Picker.Item label="31 semanas" value="semana31" />
-  <Picker.Item label="32 semanas" value="semana32" />
-  <Picker.Item label="33 semanas" value="semana33" />
-  <Picker.Item label="34 semanas" value="semana34" />
-  <Picker.Item label="35 semanas" value="semana35" />
-  <Picker.Item label="36 semanas" value="semana36" />
-  <Picker.Item label="37 semanas" value="semana37" />
-  <Picker.Item label="38 semanas" value="semana38" />
-  <Picker.Item label="39 semanas" value="semana39" />
-  <Picker.Item label="40 semanas" value="semana40" />
-  <Picker.Item label="41 semanas" value="semana41" />
-  <Picker.Item label="42 semanas" value="semana42" />
+  <Picker.Item label="6 meses" value="mes6" />
+  <Picker.Item label="7 meses" value="mes7" />
+  <Picker.Item label="8 meses" value="mes8" />
+  <Picker.Item label="9 meses" value="mes9" />
+  <Picker.Item label="10 meses" value="mes10" />
+  <Picker.Item label="11 meses" value="mes11" />
+  <Picker.Item label="12 meses (1 ano)" value="ano1" />
+  <Picker.Item label="2 anos" value="ano2" />
+  <Picker.Item label="3 anos" value="ano3" />
+  <Picker.Item label="4 anos" value="ano4" />
+  <Picker.Item label="5 anos" value="ano5" />
+  <Picker.Item label="6 anos" value="ano6" />
+  <Picker.Item label="7 anos" value="ano7" />
+  <Picker.Item label="8 anos" value="ano8" />
+  <Picker.Item label="9 anos" value="ano9" />
+  <Picker.Item label="10 anos" value="ano10" />
+  <Picker.Item label="11 anos" value="ano11" />
+  <Picker.Item label="12 anos" value="ano12" />
+  <Picker.Item label="13 anos" value="ano13" />
+  <Picker.Item label="14 anos" value="ano14" />
 </Picker>
 
     </View>

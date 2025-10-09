@@ -8,7 +8,7 @@ export default function Setinha(){
  
     <View style={styles.voltar}>
 
-        <FontAwesome name="chevron-left" size={35} color="#00A7A7" onPress={() => router.back()}/>
+        <FontAwesome name="chevron-left" size={38} color="#00A7A7" onPress={() => router.back()}/>
 
     </View>
         
@@ -21,8 +21,8 @@ export const styles = StyleSheet.create({
 voltar:{
     display:"flex",
     justifyContent:"flex-start",
-    marginTop: 70,
-    marginLeft: 20,
+    marginTop: 10,
+
 }
 
 })

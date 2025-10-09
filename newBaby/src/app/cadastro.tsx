@@ -2,6 +2,7 @@ import { View, Text, StyleSheet} from "react-native"
 import { ButtonNormal } from "@/components/buttonNormal/buttonNormal"
 import { router } from "expo-router"
 import {Input} from "@/components/input/index"
+import Setinha from "@/components/setaVoltar/index"
 
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 
@@ -14,7 +15,7 @@ export default function Cadastro(){
         <View style={styles.container}>
            
         <View style={styles.caixinha}> 
-            <FontAwesome name="chevron-left" size={35} color="#00A7A7" onPress={() => router.back()}/>
+        <Setinha/>
         <View style={styles.titulos}>
             <Text style={styles.title}>Seja bem-vindo</Text>
             <Text style={styles.subtitle}>Vamos começar o seu cadastro</Text>

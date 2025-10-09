@@ -16,23 +16,23 @@ export default function Home(){
 
        <Setinha></Setinha>
 
-        <Image source={require('../image/gravida3.png')} style={styles.image}/>
+        <Image source={require('../image/maeefilha.png')} style={styles.image}/>
 
 
        <View style={styles.linha}>
         <View style={styles.bolinha}></View>
         <View style={styles.bolinha}></View>
+        <View style={styles.bolinha}></View>
+        <View style={styles.bolinha}></View>
+        <View style={styles.bolinha}></View>
         <View style={styles.bolinha1}></View>
-        <View style={styles.bolinha}></View>
-        <View style={styles.bolinha}></View>
-        <View style={styles.bolinha}></View>
        </View>
 
    <View style={styles.contentText}>
-        <Text style={styles.text}>Encontre dicas, cuidados, conselhos e uma rede de conexões imensa em um só lugar</Text>
+        <Text style={styles.text}>Organize suas consultas e compromissos, acompanhe sua gestação e sempre tenha na palma da mão a organização do seu dia</Text>
        </View>
 
-      <ButtonNormal title="Proximo" onPress={handleNext}/>
+      <ButtonNormal title="Vamos começar!" onPress={handleNext}/>
 
     </View>
         
@@ -56,7 +56,7 @@ contentText:{
 },
 text:{
     textAlign: "center",
-    width:"62%",
+    width:"80%",
     fontSize:18,
     fontWeight:500,
     fontFamily: 'Lexa-Deca',
@@ -86,13 +86,13 @@ bolinha:{
 
 },
 image:{
-    width:"57%",
-    height: "61%",
+    width:"100%",
+    height: "50%",
     display:"flex",
     justifyContent:"center",
     alignSelf:"center",
     marginTop: 70,
-    marginBottom: 80,
+    marginBottom: 150,
 },
 
 })

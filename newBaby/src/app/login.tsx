@@ -4,6 +4,8 @@ import {ButtonGoogle} from "@/components/buttonGoogle/buttonGoogle"
 import { router } from "expo-router"
 import {Input} from "@/components/input/index"
 import {Marcado} from "@/components/checkbox/index"
+import Setinha from "@/components/setaVoltar/index"
+
 
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 
@@ -16,7 +18,7 @@ export default function Home(){
         <View style={styles.container}>
            
         <View style={styles.caixinha}> 
-            <FontAwesome name="chevron-left" size={35} color="#00A7A7" onPress={() => router.back()}/>
+            <Setinha/>
         <View style={styles.titulos}>
             <Text style={styles.title}>Acessar</Text>
             <Text style={styles.subtitle}>Faça login na sua conta</Text>

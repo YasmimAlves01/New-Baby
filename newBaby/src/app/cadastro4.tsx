@@ -4,6 +4,7 @@ import { ButtonNormal } from "@/components/buttonNormal/buttonNormal"
 import { router } from "expo-router"
 import { Picker } from '@react-native-picker/picker';
 import {CheckPost} from "@/components/checkPost/index";
+import Setinha from "@/components/setaVoltar/index"
 
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 
@@ -20,7 +21,7 @@ export default function SelectTypes(){
         <View style={styles.container}>
 
         <View style={styles.caixinha}> 
-            <FontAwesome name="chevron-left" size={35} color="#00A7A7" onPress={() => router.back()}/>
+            <Setinha/>
         <View style={styles.titulos}>
             <Text style={styles.title}>Acompanhe</Text>
             <Text style={styles.subtitle}>Que tipo de post você deseja ver</Text>
@@ -67,7 +68,6 @@ export const styles = StyleSheet.create({
         justifyContent:"center",
         alignItems:"center",
         gap:30,
-        marginTop: -50
 
     },
     title:{
@@ -90,7 +90,7 @@ export const styles = StyleSheet.create({
         justifyContent: "flex-start",
         gap: 5,
         marginTop: 15,
-        marginBottom: "28%",
+        marginBottom: "12%",
     },
 
 
