@@ -1,26 +1,24 @@
-import { View, Text, StyleSheet} from "react-native"
+import { View, Text, StyleSheet, } from "react-native"
 import { ButtonNormal } from "@/components/buttonNormal/buttonNormal"
 import { router } from "expo-router"
 import {EscolhaPerfil} from "@/components/caixaSelect/index"
 import Setinha from "@/components/setaVoltar/index"
+import { useState, } from "react"
 
 
-import FontAwesome from '@expo/vector-icons/FontAwesome';
-
-function handleGestacao() {
-  router.navigate("/cadastro3");
-}
-
-function handleFilho() {
-  router.navigate("/cadastro6");
-}
-
-
-  function handleNext(){
-        router.navigate("/cadastro3")
+export default function cadastroEscolhaPerfil(){
+    const [perfilSelecionado, setPerfilSelecionado] = useState<string | null>(null);
+    function handleNext(){
+    if(perfilSelecionado == "Gestação"){
+        router.navigate("/cadastroGestacao");
     }
-
-export default function CadastroDois(){
+    else if(perfilSelecionado == "Filhos"){
+        router.navigate("/cadastroFilhos");
+    }
+    else{
+        alert("Por favor selecione uma opção abaixo");
+    }
+    }
     return(
        <View style={styles.container}>
            
@@ -36,15 +34,15 @@ export default function CadastroDois(){
         <EscolhaPerfil 
         tipo="Quero acompanhar minha gestação" 
         textinho="Ideal para quem esta gravida e deseja acompanhar o desenvolvimento do bebê e o seu próprio.
-        Muitas dicas de cuidados, alimentação, mudança do corpo e o que fazer quando a hora chegar"onPress={handleGestacao}/>
+        Muitas dicas de cuidados, alimentação, mudança do corpo e o que fazer quando a hora chegar" isSelect={perfilSelecionado=="Gestação"} onSelect={() => setPerfilSelecionado("Gestação")}/>
         
         <EscolhaPerfil tipo="Quero acompanhar o desenvolvimento do meu filho(a)" 
-        textinho="Ideal para quem ja é papai e mamãe e deseja acompanhar o desenvolvimento, o ensino, e melhorar sua própria rotina. Muitas dicas de cuidado, alimentação, educação e comportamento" onPress={handleFilho}/>
+        textinho="Ideal para quem ja é papai e mamãe e deseja acompanhar o desenvolvimento, o ensino, e melhorar sua própria rotina. Muitas dicas de cuidado, alimentação, educação e comportamento" isSelect={perfilSelecionado=="Filhos"} onSelect={() => setPerfilSelecionado("Filhos")}/>
         </View>
             
          <Text style={styles.aviso}>** não se preocupe, você poderá alterar isso futuramente. Se você for acompanhar sua gestação ao final dela isso mudara automaticamente</Text>   
 
-
+        <ButtonNormal title="Proximo" onPress={handleNext}></ButtonNormal>
             
 
 
@@ -92,6 +90,6 @@ export const styles = StyleSheet.create({
         width:'90%',
         color:'#727272',
         fontSize: 12,
-        marginBottom: 50
+        marginBottom: 10
     }
 })

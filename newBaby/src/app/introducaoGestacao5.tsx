@@ -6,7 +6,7 @@ import { ButtonNormal } from "@/components/buttonNormal/buttonNormal";
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 
   function handleNext(){
-        router.navigate("/introducao2")
+        router.navigate("/introducaoGestacao6")
     }
 
 export default function Home(){
@@ -16,20 +16,20 @@ export default function Home(){
 
        <Setinha></Setinha>
 
-        <Image source={require('../image/gravida.png')} style={styles.image}/>
+        <Image source={require('../image/gravida4.png')} style={styles.image}/>
 
 
        <View style={styles.linha}>
+        <View style={styles.bolinha}></View>
+        <View style={styles.bolinha}></View>
+        <View style={styles.bolinha}></View>
+        <View style={styles.bolinha}></View>
         <View style={styles.bolinha1}></View>
-        <View style={styles.bolinha}></View>
-        <View style={styles.bolinha}></View>
-        <View style={styles.bolinha}></View>
-        <View style={styles.bolinha}></View>
         <View style={styles.bolinha}></View>
        </View>
 
    <View style={styles.contentText}>
-        <Text style={styles.text}>Bem-vindo(a) ao New Baby, é um prazer te acompanhar nessa nova jornada</Text>
+        <Text style={styles.text}>Organize suas consultas e compromissos, acompanhe sua gestação e sempre tenha na palma da mão a organização do seu dia</Text>
        </View>
 
       <ButtonNormal title="Proximo" onPress={handleNext}/>
@@ -56,7 +56,7 @@ contentText:{
 },
 text:{
     textAlign: "center",
-    width:"62%",
+    width:"80%",
     fontSize:18,
     fontWeight:500,
     fontFamily: 'Lexa-Deca',
@@ -68,7 +68,8 @@ linha:{
     flexDirection:"row",
     gap: 5,
     justifyContent: "center",
-    marginBottom: 25,
+    marginBottom: 20,
+    marginTop:20
 },
 bolinha1:{
     width: 15,
@@ -85,13 +86,13 @@ bolinha:{
 
 },
 image:{
-    width:"105%",
-    height: "68%",
+    width:"100%",
+    height: "60%",
     display:"flex",
     justifyContent:"center",
     alignSelf:"center",
-    marginTop: 90,
-    marginBottom: 30,
+    marginTop: 70,
+    marginBottom: 82,
 },
 
 })

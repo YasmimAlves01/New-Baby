@@ -6,7 +6,7 @@ import { ButtonNormal } from "@/components/buttonNormal/buttonNormal";
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 
   function handleNext(){
-        router.navigate("/introducao6")
+        router.navigate("/")
     }
 
 export default function Home(){
@@ -16,7 +16,7 @@ export default function Home(){
 
        <Setinha></Setinha>
 
-        <Image source={require('../image/gravida4.png')} style={styles.image}/>
+        <Image source={require('../image/maeefilha.png')} style={styles.image}/>
 
 
        <View style={styles.linha}>
@@ -24,15 +24,15 @@ export default function Home(){
         <View style={styles.bolinha}></View>
         <View style={styles.bolinha}></View>
         <View style={styles.bolinha}></View>
-        <View style={styles.bolinha1}></View>
         <View style={styles.bolinha}></View>
+        <View style={styles.bolinha1}></View>
        </View>
 
    <View style={styles.contentText}>
         <Text style={styles.text}>Organize suas consultas e compromissos, acompanhe sua gestação e sempre tenha na palma da mão a organização do seu dia</Text>
        </View>
 
-      <ButtonNormal title="Proximo" onPress={handleNext}/>
+      <ButtonNormal title="Vamos começar!" onPress={handleNext}/>
 
     </View>
         
@@ -69,7 +69,7 @@ linha:{
     gap: 5,
     justifyContent: "center",
     marginBottom: 20,
-    marginTop:20
+    marginTop:10
 },
 bolinha1:{
     width: 15,
@@ -87,12 +87,12 @@ bolinha:{
 },
 image:{
     width:"100%",
-    height: "60%",
+    height: "50%",
     display:"flex",
     justifyContent:"center",
     alignSelf:"center",
     marginTop: 70,
-    marginBottom: 82,
+    marginBottom: 150,
 },
 
 })

@@ -10,7 +10,7 @@ import Setinha from "@/components/setaVoltar/index"
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 
   function handleNext(){
-        router.navigate("/cadastro")
+        router.navigate("/cadastroInicial")
     }
 
 export default function Home(){

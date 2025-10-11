@@ -10,7 +10,7 @@ import Setinha from "@/components/setaVoltar/index"
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 
   function handleNext(){
-        router.navigate("/cadastro4")
+        router.navigate("/escolhaConteudoFilhos")
     }
 
 
@@ -26,7 +26,7 @@ export default function SelectCadastro(){
             <Setinha/>
             <View style={styles.titulos}>
             <Text style={styles.title}>Meu filho(a) tem</Text>
-            <Text style={styles.subtitle}>Selecione de quantos meses ou anos seu filho tem </Text>
+            <Text style={styles.subtitle}>Selecione de quantos meses/anos seu filho(a) tem </Text>
         </View>
         </View>
 

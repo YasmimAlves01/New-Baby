@@ -4,12 +4,13 @@ import { ButtonNormal } from "@/components/buttonNormal/buttonNormal"
 import { router } from "expo-router"
 import { Picker } from '@react-native-picker/picker';
 import {CheckPost} from "@/components/checkPost/index";
-import Setinha from "@/components/setaVoltar/index"
+import Setinha from "@/components/setaVoltar/index";
+
 
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 
   function handleNext(){
-        router.navigate("/introducao")
+        router.navigate("/")
     }
 
 
@@ -29,22 +30,24 @@ export default function SelectTypes(){
         </View>
 
         <View style={styles.RowCheckd}>
-        <CheckPost textinho="Gestação"></CheckPost>
-        <CheckPost textinho="Desenvolvimento do bebê"></CheckPost>
+        <CheckPost textinho="Educação"></CheckPost>
+        <CheckPost textinho="Desenvolvimento Infantil"></CheckPost>
         <CheckPost textinho="Dicas amamentação"></CheckPost>
         <CheckPost textinho="Dicas de cuidados"></CheckPost>
-        <CheckPost textinho="Roupas de gestante"></CheckPost>
-        <CheckPost textinho="Maternidade"></CheckPost>
-        <CheckPost textinho="Dicas pediátricas"></CheckPost>
-        <CheckPost textinho="Receitas para gestante"></CheckPost>
-        <CheckPost textinho="Dicas financeiras para novos pais"></CheckPost>
-        <CheckPost textinho="Introdução alimentar"></CheckPost>
-        <CheckPost textinho="Grupos e comunidades"></CheckPost>
+        <CheckPost textinho="Adolescência"></CheckPost>
+        <CheckPost textinho="Roupas de bebê"></CheckPost>
+        <CheckPost textinho="Maternida"></CheckPost>
+        <CheckPost textinho="Dicas Pediatricas"></CheckPost>
+        <CheckPost textinho="Exercicios Fisicos"></CheckPost>
+        <CheckPost textinho="Comunicação com os Filhos"></CheckPost>
+        <CheckPost textinho="Dicas Financeiras"></CheckPost>
+        <CheckPost textinho="Introdução Alimentar"></CheckPost>
+        <CheckPost textinho="Desenvolvimento emocional"></CheckPost>
         <CheckPost textinho="Autocuidado"></CheckPost>
         <CheckPost textinho="Dicas de segurança domestica e segurança"></CheckPost>
-        <CheckPost textinho="Compras recomendadas"></CheckPost>
+        <CheckPost textinho="Atividades e lazer"></CheckPost>
         <CheckPost textinho="Vinculo mamãe e bebê"></CheckPost>
-        <CheckPost textinho="Saúde mental"></CheckPost>
+        <CheckPost textinho="Saude mental"></CheckPost>
         </View>  
 
         <ButtonNormal title="Proximo" onPress={handleNext}/>
@@ -81,7 +84,6 @@ export const styles = StyleSheet.create({
         fontSize:18,
         fontWeight:400,
         fontFamily: 'Lexa-Deca',
-
     },
     RowCheckd: {
         width: "90%",

@@ -6,7 +6,7 @@ import { ButtonNormal } from "@/components/buttonNormal/buttonNormal";
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 
   function handleNext(){
-        router.navigate("/introducao4")
+        router.navigate("/introducaoGestacao5")
     }
 
 export default function Home(){
@@ -16,23 +16,23 @@ export default function Home(){
 
        <Setinha></Setinha>
 
-        <Image source={require('../image/maeefilha.png')} style={styles.image}/>
+        <Image source={require('../image/consulta.png')} style={styles.image}/>
 
 
        <View style={styles.linha}>
         <View style={styles.bolinha}></View>
         <View style={styles.bolinha}></View>
         <View style={styles.bolinha}></View>
-        <View style={styles.bolinha}></View>
-        <View style={styles.bolinha}></View>
         <View style={styles.bolinha1}></View>
+        <View style={styles.bolinha}></View>
+        <View style={styles.bolinha}></View>
        </View>
 
    <View style={styles.contentText}>
-        <Text style={styles.text}>Organize suas consultas e compromissos, acompanhe sua gestação e sempre tenha na palma da mão a organização do seu dia</Text>
+        <Text style={styles.text}>Aqui você encontra tudo que você precisa para se organizar, des da gestação até o nascimento</Text>
        </View>
 
-      <ButtonNormal title="Vamos começar!" onPress={handleNext}/>
+      <ButtonNormal title="Proximo" onPress={handleNext}/>
 
     </View>
         
@@ -56,7 +56,7 @@ contentText:{
 },
 text:{
     textAlign: "center",
-    width:"80%",
+    width:"62%",
     fontSize:18,
     fontWeight:500,
     fontFamily: 'Lexa-Deca',

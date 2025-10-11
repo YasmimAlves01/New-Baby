@@ -7,10 +7,9 @@ import { Picker } from '@react-native-picker/picker';
 import Setinha from "@/components/setaVoltar/index"
 
 
-import FontAwesome from '@expo/vector-icons/FontAwesome';
 
   function handleNext(){
-        router.navigate("/cadastro4")
+        router.navigate("/escolhaConteudoGestacao")
     }
 
 

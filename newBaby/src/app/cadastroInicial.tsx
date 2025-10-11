@@ -7,7 +7,7 @@ import Setinha from "@/components/setaVoltar/index"
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 
   function handleNext(){
-        router.navigate("/cadastro2")
+        router.navigate("/cadastroEscolhaPerfil")
     }
 
 export default function Cadastro(){

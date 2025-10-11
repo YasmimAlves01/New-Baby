@@ -4,16 +4,19 @@ import { View, Text, TouchableOpacity, StyleSheet, TextProps } from 'react-nativ
 type Props = Omit<TextProps, 'onPress'> &{
     textinho: string,
     tipo: string,
-    onPress?: () => void
+    onSelect?: () => void,
+    isSelect: Boolean,
 
 }
 
-export function EscolhaPerfil({ textinho, tipo, onPress }: Props) {
+export function EscolhaPerfil({ textinho, tipo, onSelect, isSelect }: Props) {
   const [checked, setChecked] = useState(false);
 
   function handlePress() {
     setChecked(true);
-    if (onPress) onPress();
+    if (onSelect) onSelect();
+
+
   }
 
   return (
@@ -27,7 +30,7 @@ export function EscolhaPerfil({ textinho, tipo, onPress }: Props) {
             borderRadius: 4,
             borderWidth: 2,
             borderColor: '#08BAB1',
-            backgroundColor: checked ? '#08BAB1' : '#FFF',
+            backgroundColor: isSelect ? '#08BAB1' : '#FFF',
             justifyContent: 'center',
             alignItems: 'center',
             marginRight: 5
@@ -39,12 +42,13 @@ export function EscolhaPerfil({ textinho, tipo, onPress }: Props) {
         <Text>{textinho}</Text>
       </View>
     </TouchableOpacity>
+
   );
 }
 
 export const styles = StyleSheet.create({
 caixa:{
-    width:"90%",
+    width:"79%",
     flexDirection: 'column', 
     padding: 10,
     gap:10,
